@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: westnyc_spree_production
-  username: westnyc_spree
-  password: <%= ENV['WESTNYC_SPREE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  #database: westnyc_spree_production
+  #username: westnyc_spree
+  #password: <%= ENV['WESTNYC_SPREE_DATABASE_PASSWORD'] %>
