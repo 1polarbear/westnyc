@@ -50,7 +50,7 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['HEROKU_POSTGRESQL_BLACK_URL'] %>
   #database: westnyc_spree_production
   #username: westnyc_spree
   #password: <%= ENV['WESTNYC_SPREE_DATABASE_PASSWORD'] %>
